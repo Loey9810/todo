@@ -30,11 +30,45 @@ body {
 }
 
 /* header板块 */
-.h {
-  background: rgba(47, 47, 47, 0.98);
-  height: 60px;
-  width: 100%;
-  position: fixed;
+@media screen and (max-width: 450px) {
+  .header {
+    margin-bottom: 60px;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .header .w input {
+    width: 430px;
+    margin: 25px auto;
+    outline: none;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 10px;
+    display: block;
+  }
+}
+
+
+
+/* 媒体查询前 */
+@media screen and (min-width: 451px) {
+  .logo {
+    float: left;
+  }
+
+  .header .w input {
+    position: absolute;
+    right: 5px;
+    height: 30px;
+    width: 260px;
+    margin-top: 15px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 8px;
+    padding-left: 10px;
+  }
 }
 
 .header {
@@ -44,7 +78,6 @@ body {
 }
 
 .w {
-  /* width: 640px; */
   height: 60px;
   margin: 0 auto;
   line-height: 60px;
@@ -59,7 +92,6 @@ body {
   line-height: 50px;
   width: 180px;
   height: 50px;
-  float: left;
   padding-top: 5px;
 }
 
@@ -75,18 +107,6 @@ body {
 
 .header h1 a span {
   margin-left: 45px;
-}
-
-.header .w input {
-  position: absolute;
-  right: 5px;
-  height: 30px;
-  width: 260px;
-  margin-top: 15px;
-  outline: none;
-  font-size: 14px;
-  border-radius: 8px;
-  padding-left: 10px;
 }
 
 .main {
