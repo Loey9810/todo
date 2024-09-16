@@ -13,24 +13,54 @@ a {
 }
 
 body {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family:
+    Tahoma,
+    Arial,
+    PingFangSC-Regular,
+    Hiragino Sans GB,
+    Microsoft Yahei,
+    sans-serif;
+  line-height: 1.5;
   background-color: #cdcdcd;
+  height: 1000px;
 }
 
 /* header板块 */
+.h {
+  background: rgba(47, 47, 47, 0.98);
+  height: 60px;
+  width: 100%;
+  position: fixed;
+}
+
 .header {
   background: rgba(47, 47, 47, 0.98);
   height: 60px;
+  width: 100%;
 }
 
 .w {
-  width: 640px;
+  /* width: 640px; */
+  height: 60px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  line-height: 60px;
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
 }
 
 .logo {
   line-height: 50px;
+  width: 180px;
+  height: 50px;
+  float: left;
+  padding-top: 5px;
 }
 
 .header h1 a {
@@ -38,19 +68,20 @@ body {
   background-size: contain;
   color: #fff;
   display: inline-block;
-  width: 150px;
+  width: 195px;
   height: 40px;
   line-height: 40px;
-  vertical-align: middle;
 }
 
 .header h1 a span {
-  margin-left: 50px;
+  margin-left: 45px;
 }
 
 .header .w input {
+  position: absolute;
+  right: 5px;
   height: 30px;
-  width: 350px;
+  width: 260px;
   margin-top: 15px;
   outline: none;
   font-size: 14px;
@@ -59,7 +90,9 @@ body {
 }
 
 .main {
-  width: 640px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
   margin: 0 auto;
 }
 
@@ -82,10 +115,6 @@ h2 span {
   color: #666;
   font-size: 14px;
 }
-
-/* ul {
-  display: none;
-} */
 
 ol,
 ul {
@@ -168,18 +197,4 @@ footer a {
   color: #666;
   text-decoration: none;
   color: #999;
-}
-
-@media screen and (max-device-width: 620px) {
-  section {
-    width: 96%;
-    padding: 0 2%;
-  }
-}
-
-@media screen and (min-width: 620px) {
-  section {
-    width: 600px;
-    padding: 0 10px;
-  }
 }
