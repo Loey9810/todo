@@ -32,7 +32,7 @@ body {
 /* header板块 */
 @media screen and (max-width: 450px) {
   .header {
-    margin-bottom: 60px;
+    margin-bottom: 74px;
   }
 
   .logo {
@@ -204,10 +204,8 @@ li a {
   cursor: pointer;
 }
 
-
-
 footer {
-  margin: 50px auto;
+  margin: 100px auto;
   color: #666;
   font-size: 14px;
   text-align: center;
