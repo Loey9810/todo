@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #cdcdcd;
+}
+
+/* header板块 */
+.header {
+  background: rgba(47, 47, 47, 0.98);
+  height: 60px;
+}
+
+.w {
+  width: 640px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  line-height: 50px;
+}
+
+.header h1 a {
+  background: url(../images/ico-white.png) no-repeat;
+  background-size: contain;
+  color: #fff;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.header h1 a span {
+  margin-left: 50px;
+}
+
+.header .w input {
+  height: 30px;
+  width: 350px;
+  margin-top: 15px;
+  outline: none;
+  font-size: 14px;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.main {
+  width: 640px;
+  margin: 0 auto;
+}
+
+h2 {
+  position: relative;
+  margin: 15px;
+}
+
+h2 span {
+  position: absolute;
+  top: 5px;
+  right: -7px;
+  display: inline-block;
+  padding: 0 5px;
+  height: 20px;
+  border-radius: 20px;
+  background: #E6E6FA;
+  line-height: 22px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ul {
+  display: none;
+} */
+
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li input {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+li p input {
+  top: 3px;
+  left: 40px;
+  width: 70%;
+  height: 20px;
+  line-height: 14px;
+  text-indent: 5px;
+  font-size: 14px;
+}
+
+li {
+  height: 32px;
+  line-height: 32px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0 45px;
+  border-radius: 3px;
+  border-left: 5px solid #629A9C;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+ol li {
+  cursor: move;
+}
+
+ul li {
+  border-left: 5px solid #999;
+  opacity: 0.5;
+}
+
+li a {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 14px;
+  border: 6px double #FFF;
+  background: #CCC;
+  line-height: 14px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
+footer {
+  margin: 50px auto;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+  color: #999;
+}
+
+@media screen and (max-device-width: 620px) {
+  section {
+    width: 96%;
+    padding: 0 2%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  section {
+    width: 600px;
+    padding: 0 10px;
+  }
+}
